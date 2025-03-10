@@ -12,7 +12,16 @@ const orderRoutes = require("./routes/orderRoutes.js");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+
+const cors = require("cors");
+const corsOptions = {
+  origin: "*",
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;
