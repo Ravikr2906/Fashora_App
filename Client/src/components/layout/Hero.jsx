@@ -4,8 +4,7 @@ import React from 'react'
 import B from '../../assets/B.jpg'
 import C from '../../assets/C.jpg'
 import login from "../../assets/login.jpg"
-import heroNN from "../../assets/heroNN.jpg"
-import heroN from "../../assets/heroN.jpg"
+
 
 import { Link } from 'react-router-dom'
 
@@ -45,7 +44,7 @@ const Hero = () => {
       <div className="ms-5 position-absolute top-50 start-50 translate-middle   text-center p-3 rounded" style={{ color: '#333'}}>
       <h1 className='display-3'><strong>Vacation <br/> Ready </strong></h1>
       <p>Explore our vacation-ready outfits with fast worldwide shipping.</p>
-      <Link to="#" className='p-3 my-3 btn rounded bg-light link-dark text-decoration-none '>
+      <Link to="/collections/all" className='p-3 my-3 btn rounded bg-light link-dark text-decoration-none '>
       Shop Now
       </Link>
     </div>
