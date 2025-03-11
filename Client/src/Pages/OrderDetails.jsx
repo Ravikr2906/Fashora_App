@@ -21,8 +21,8 @@ const OrderDetails = () => {
       {!orderDetails ? (<p>No Order Details found</p>) : (
         <div className=' p-3 shadow rounded border'>
           <div className="d-flex flex-colum  flex-sm-row justify-content-between mb-2">
-            <div>
-              <h5>Order Id: #{orderDetails._id}</h5>
+            <div className='text-wrap overflow-hidden'>
+              <h5 className='fs-5 text-break'>Order Id: #{orderDetails._id}</h5>
               <p>{new Date(orderDetails.createdAt).toLocaleDateString()}</p>
             </div>
             <div className=" d-flex flex-column align-items-start align-items-sm-end">
