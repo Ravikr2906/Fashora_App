@@ -8,13 +8,15 @@ const cartRoutes = require("./routes/cartRoutes.js");
 const checkoutRoutes = require("./routes/checkoutRoutes.js");
 const orderRoutes = require("./routes/orderRoutes.js");
 
+
+dotenv.config();
 // const Cart = require("./Models/Cart.js");
 
 const app = express();
 app.use(express.json());
 
 
-const cors = require("cors");
+
 const corsOptions = {
   origin: "*",
   credentials: true,
@@ -23,7 +25,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-dotenv.config();
+
 const PORT = process.env.PORT || 3000;
 
 //connect DB
