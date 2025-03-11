@@ -34,7 +34,7 @@ const CartContents = ({cart, userId, guestId}) => {
           <div key={index} className='d-flex items-start justify-content-between py-4 border-bottom'>
              
             <div className='d-flex items-start'>
-                 <img src={product.image} alt="Product-img" className='object-cover  rounded' height={200} width={200}/>
+                 <img src={product.image} alt="Product-img" className='object-cover  rounded' height={200} width={150}/>
                  <div className='ms-3'>
                   <h5>{product.name}</h5>
                   <p>
