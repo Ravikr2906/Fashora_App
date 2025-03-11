@@ -18,7 +18,7 @@ app.use(express.json());
 
 
 const corsOptions = {
-  origin: "https://fashora-app.vercel.app/",
+  origin: "*",
   credentials: true,
   optionSuccessStatus: 200,
 };
@@ -26,7 +26,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT ;
 
 //connect DB
 connectDB();
