@@ -18,8 +18,10 @@ app.use(express.json());
 
 
 const corsOptions = {
-  origin: "*",
+  origin: "https://fashora-app.vercel.app/",
   credentials: true,
+   methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   optionSuccessStatus: 200,
 };
 
