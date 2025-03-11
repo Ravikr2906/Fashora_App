@@ -39,15 +39,15 @@ const OrderConfirmation = () => {
 
     {checkout && (
       <div className='p-3 rounded border border-2'>
-        <div className="d-flex justify-content-between mb-3">  
+        <div className="d-flex flex-column flex-md-row  justify-content-between mb-3">  
           {/* Order id and date */}
-          <div>
-        <h4>Order ID: {checkout._id}</h4>
+          <div className='text-wrap overflow-hidden'>
+        <h4 className='fs-5 text-break'>Order ID: {checkout._id}</h4>
         <p >Order date: {new Date(checkout.createdAt).toLocaleDateString()}</p>
         </div> 
 
        {/* estimated Delivery */}
-        <div>
+        <div className='mt-2 mt-md-0'>
          <p className='text-success fs-5'>Estimated Delivery: {calculateEstimatedDelivery(checkout.createdAt)}</p>
         </div>
         </div>
