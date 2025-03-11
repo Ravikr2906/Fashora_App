@@ -110,10 +110,28 @@ const ProductDetails = ({ productId }) => {
 
       {/* main Image */}
       
-       <div className="col-md-6 mb-4">
-        <img src={mainImage} alt="Main Product" className="w-100 rounded object-fit-cover" height={550}/>
-      
-      </div> 
+      <div className="col-md-6 mb-4">
+  <img 
+    src={mainImage} 
+    alt="Main Product" 
+    className="w-100 rounded d-sm-block d-md-none" 
+    style={{ height: '300px', objectFit: 'cover' }} 
+  />
+  <img 
+    src={mainImage} 
+    alt="Main Product" 
+    className="w-100 rounded d-none d-md-block d-lg-none" 
+    style={{ height: '450px', objectFit: 'cover' }} 
+  />
+  <img 
+    src={mainImage} 
+    alt="Main Product" 
+    className="w-100 rounded d-none d-lg-block" 
+    style={{ height: '550px', objectFit: 'cover' }} 
+  />
+</div>
+
+
 
       {/* small screen thumbnail */}
        <div className='col-md-8 d-flex d-md-none flex-row  mb-3 mt-2'>
